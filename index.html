@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+    <style> 
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Julius+Sans+One&family=Quicksand&display=swap'); 
     </style>
 </head>
 <body>
@@ -15,14 +15,14 @@
         <div class="image-section">
             <div class="logo-area">
                 <img src="odin-lined.png" alt="Odin logo with lines">
-                <p>TILDE</p>
+                <p>ODIN</p>
             </div>
             <div class="image-credit">
-                <p>Photo by <a href="https://unsplash.com/@eugene_golovesov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eugene Golovesov</a> on <a href="https://unsplash.com/photos/VJ6aRAcrj-Y?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+                <p>Photo by <a class= "credit" href="https://unsplash.com/@eugene_golovesov" target="_blank" rel="noopener noreferrer">Eugene Golovesov</a> on <a class= "credit" href="https://unsplash.com/photos/VJ6aRAcrj-Y" target="_blank" rel="noopener noreferrer">Unsplash</a></p>
             </div>
         </div>
         <div class="content-section">
-            <div class="top">
+            <div class="description">
                 <p class="text">
                     This is not a real online service! You know you need something 
                     like this in your life to help you realize your deepest dreams.
@@ -30,25 +30,47 @@
                 <p class="text">Sign up <em>now</em> and get started.</p>
             </div>
             <form action="#">
-                <div class="form-fields">
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name">
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name">
-                    <label for="mail">EMAIL</label>
-                    <input type="email" id="mail">
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" id="phone">
-                    <label for="pw">PASSWORD</label>
-                    <input type="password" id="pw">
-                    <label for="pw-confirm">CONFIRM PASSWORD</label>
-                    <input type="password" id="pw-confirm">
-                </div>
-                <div class="button-area">
+                <section class="form-fields">
+                    <fieldset>
+                        <div class="form-cell">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="form-cell">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-cell">
+                            <label for="mail">EMAIL</label>
+                            <input type="email" id="mail" name="mail" required>
+                        </div>
+                        <div class="form-cell">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div class="form-cell">
+                            <label for="pw">PASSWORD</label>
+                            <input type="password" id="pw" name="pw" required>
+                        </div>
+                        <div class="form-cell">
+                            <label for="pw-confirm">CONFIRM PASSWORD</label>
+                            <input type="password" id="pw-confirm" name="pw-confirm" required>
+                        </div>
+                    </fieldset>
+                </section>
+                <section class="button-area">
                     <button type="submit">Create Account</button>
                     <p>Already have an account? <a href="#">Log in</a></p>
-                </div>
+                </section>
             </form>
+            <div class="footer">
+                <span class="credits">tarikkocar © 2022</span>
+                <a href="https://github.com/tarikkocar" target="_blank"><img src="github-gray.svg"></a>
+            </div>
         </div>
     </div>
 </body>
