@@ -47,7 +47,7 @@ img {
 img ~ p {
     font-family: 'Amatic SC', cursive;
     color: var(--left-area-color);
-    font-size: 5em;
+    font-size: calc(40px + 3vw);
 }
 
 button ~ p {
@@ -65,7 +65,7 @@ button ~ p {
 
 .image-credit p {
     font-family: var(--primary-font);
-    font-size: 0.8rem;
+    font-size: calc(1.2px + 0.8vw);
     text-align: center;
 }
 
