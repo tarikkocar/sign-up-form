@@ -65,7 +65,7 @@ button ~ p {
 
 .image-credit p {
     font-family: var(--primary-font);
-    font-size: calc(1.2px + 0.8vw);
+    font-size: calc(5px + 0.3vw);
     text-align: center;
 }
 
